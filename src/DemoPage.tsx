@@ -559,8 +559,8 @@ function DemoPage({ onBackToLanding }: DemoPageProps) {
               </div>
 
               <div className="demo-ownership-trail">
-                {selectedProduct.ownershipTrail.map((owner) => (
-                  <span key={`${selectedProduct.id}-${owner}`}>{owner}</span>
+                {selectedProduct.ownershipTrail.map((owner, index) => (
+                  <span key={`${selectedProduct.id}-${owner}-${index}`}>{owner}</span>
                 ))}
               </div>
 
